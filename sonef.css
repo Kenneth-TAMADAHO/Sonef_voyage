@@ -1,0 +1,418 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FFD029;
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+    background-image: url(assets/Send.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-position-y: 250px;
+
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.en-tete {
+    width: 1234px;
+    height:54.51px ;
+    margin-top: 26px;
+    padding: 0 18px;
+}
+
+header nav
+{
+    float: right;
+    margin-top: 19px;
+}
+
+header nav ul li
+{
+    /* float: left; */
+    display: inline-block;  
+}
+
+header nav ul li a
+{
+    font-weight: bold;
+    margin-right: 20px;
+    font-size: 22px;
+}
+
+header nav ul li  :hover {
+    color: #000000;
+}
+
+.logo {
+    width: 45px;
+    height: 54.51px;
+}
+
+.en-tete .menu-hamburger {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 30px;
+    width: 35px;
+    
+
+}
+
+section {
+    /* position: absolute; */
+    width: 100%;
+    height: 100%;  
+    transform: translateY(100px);
+    /* z-index: 1000; */    
+    margin: 10px 100px 0 100px;  
+}
+
+h1 {  
+    font-weight: 900px;
+    font-size: 75px;
+    line-height: 88.69%;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.formulaire {
+    margin-top: 30px;
+    width: 540px;
+    height: auto;
+    background: #FFFFFF;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.pied-page {
+    padding:0;
+    background-size: cover; 
+    width: 100VW;
+}
+
+footer {
+    position: absolute;
+    bottom: -5px;
+}
+
+#ville_de_depart {
+    width:  230px;
+    height: 55px;
+    top: 431px;
+    left: 171px;
+    border: solid 1px;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #000000;
+    border-color: #9a9292;
+}
+
+#ville_darriver {
+    width:  230px;
+    height: 55px;
+    top: 431px;
+    left: 171px;
+    border: solid 1px;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: center; 
+    margin-left: 15px;
+    color: #000000;
+    border-color: #9a9292;
+}
+
+#date_de_départ {
+    width:  230px;
+    height: 55px;
+    top: 431px;
+    left: 171px;
+    border: solid 1px;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #000000;
+    border-color: #9a9292;
+   
+}
+
+#heure_de_départ {
+    width: 230px;
+    height: 55px;
+    top: -18px;
+    left: 6px;
+    border: solid 1px;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: center;
+    position: relative;
+    margin-left: 15px;
+    color: #000000;
+    border-color: #9a9292;
+}
+
+
+code{
+    display: none;
+}
+
+#label_for_inputName,#label_for_inputDate {
+    margin-left: 6px;
+    margin-top: 8px;
+    margin-bottom: 3px;
+}
+
+#label_for_inputDate {
+    margin-left: 0px;
+}
+
+#label_for_inputName {
+    margin-left: 21px;
+}
+
+#nombre_de_passager {
+    width: 230px;
+    height: 55px;
+    top: 431px;
+    left: 171px;
+    border: solid 1px;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #000000;
+    border-color: #9a9292;
+}
+
+#submit {
+    width:483px;
+    height: 55px;
+    margin-top: 20px;
+    border: 0.2px;
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: center;
+    background: #0073AA;
+    color: #FBC86D;
+}
+
+
+#submit:hover{
+    border: solid #FBC86D 2px;
+    color: #fff;
+    background: #0073AA;
+  
+}
+.d-flex {
+    display: flex ;
+    margin-top: 13px;
+}
+
+@media screen and (max-width:763px) {
+    /* ul {
+        list-style: none;
+        display: grid;
+        height: 10vh;
+        width: 10vw;
+        z-index: 9000;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 24px 300px;
+    }
+
+    li{
+        height: 23px;
+    } */
+
+    body {
+        background-size: contain;
+        background-position-y: 724px;
+        overflow: scroll;
+        background-attachment: fixed;
+    }
+
+    .en-tete {
+        padding: 0;
+    }
+
+    .en-tete .menu-hamburger {
+        display: block;
+    }
+
+
+    #main_contener{
+        margin-top: -18vh;
+    }
+ 
+
+    nav{
+        display: none;
+        background-color: #000000;
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        padding: 53px;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 2000;
+        animation: aniNav linear;
+        transition: animation 1s;
+        color: white;
+    }
+
+
+  
+
+    nav ul li a{
+        text-decoration: none;
+        color: white;
+        text-align: left;
+        
+    }
+    nav ul li{
+        text-align: left;
+    }
+ 
+
+    nav ul li a:hover{
+        color: #FFD029;
+    }
+    nav ul li:hover{
+        transition: transform 0.7s;
+        transform: translateX(34px);
+        border-left: #FBC86D 5px solid;
+        padding-left: 15px;
+        color: #FFD029;
+
+    }
+
+    @keyframes aniNav {
+
+        from{
+            opacity: 0;
+        }
+
+        to{
+            opacity: 1;
+        }
+        
+    }
+
+    .openNav{
+        display:block ;
+    }
+    .navbar .mobile-menu {
+        margin-left: 0;
+    }
+
+    .navbar ul {
+        display: flex;
+        flex-direction: column;
+        padding-left: 3%;
+
+    }
+
+    code{
+        font-size: 34px;
+        color: #FFD029;
+        width: 100%;
+        text-align: right;
+        cursor: pointer;
+        display: block;
+    }
+
+    code:hover{
+       color: white;
+    }
+
+
+    
+    .en-tete .navbar ul li {
+        margin: 25px 0;
+        font-size: 1.8em;
+    }
+
+    .logo {
+        margin-left: 10px;
+    }
+
+    section {
+        /* margin: auto; */
+        width: 100vw; 
+        height: auto;
+        margin: 0;
+        padding: 50px 5px 0 5px;
+        display: flex;
+        flex-direction: column;   
+    }
+
+    h1 {
+        font-size: 45px;
+        text-align: center;
+        line-height: 52px;
+    }
+
+    .formulaire {
+        width: 80%;
+        max-width: 95vw;
+        height: auto;
+        margin: 10px -20px;
+        align-self: center;
+        flex-direction: column;  
+    }
+
+    .d-flex {
+        flex-direction: column;
+    }
+    
+    #ville_de_depart, #ville_darriver,#date_de_départ, #nombre_de_passager,  #submit {
+        width:  100%;
+        height: 50px;
+        margin: 5px 0;
+    }
+
+    #label_for_inputName {
+        margin-left: 2px;
+    }
+
+    #heure_de_départ {
+       width: 100%;
+       height: 50px;
+       margin-left: -5px;
+    }
+
+    
+
+}
